@@ -106,6 +106,12 @@ open class MenuView: UIScrollView {
         
         adjustmentContentInsetIfNeeded()
     }
+
+    // MARK: - Public method
+
+    public func menuItemView(at index: Int) -> MenuItemView? {
+        return menuItemViews.indices.contains(index) ? menuItemViews[index] : nil
+    }
     
     // MARK: - Internal method
     
